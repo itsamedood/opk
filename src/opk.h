@@ -1,6 +1,6 @@
 #pragma once
-#ifdef _WIN32
-  #define PATH_TO_MASTER "C:\\opk\\master"\
-#else
-  #define PATH_TO_MASTER "~/opk/master"
-#endif
+
+void encrypt();
+void decrypt();
+bool write_to_master();
+const char *get_master_path();
