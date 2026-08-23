@@ -1,4 +1,5 @@
 #pragma once
+#include "opk.h"
 
 #define HELP_STRING "\
 OPK\n\
@@ -12,12 +13,5 @@ Flags:\n\
   -pwd    |   Password, the most important.\n\
   -vbs    |   Verbose debug info.\n\
   -help   | Display this menu.\n"
-
-typedef struct {
-  int verbose;
-  char *parent;
-  char *emailOrUsername;
-  char *password;
-} OPKArgs;
 
 OPKArgs process_argv(int argc, char **argv);
